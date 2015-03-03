@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/tuloslaskenta');
+mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL);
 var express = require('express');
 var races = express.Router();
 
