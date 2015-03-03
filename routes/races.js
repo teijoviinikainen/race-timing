@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL);
+mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL + 'racetiming');
 var express = require('express');
 var races = express.Router();
 
