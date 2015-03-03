@@ -7,6 +7,6 @@ races.get('/',
 );
 
 races.get('/:id', 
-);
+ );
 
 module.exports = races;
